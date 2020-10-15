@@ -26,9 +26,15 @@ import useTyped from "@/components/useTyped";
 const Index = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode } = useColorMode();
+
   const borderColor = {
     light: "gray.400",
     dark: "gray.600",
+  };
+
+  const secondaryTextColor = {
+    light: "gray.700",
+    dark: "gray.400",
   };
 
   const introRef = React.useRef(null);
@@ -46,24 +52,32 @@ const Index = () => {
         spacing={3}
         justifyContent="center"
         alignItems="flex-start"
-        m="0 auto 4rem auto"
+        m="0 auto 6rem auto"
         maxWidth="700px"
       >
         <Text fontSize="6xl">Hi, I’m {FULL_NAME}</Text>
-        <div>
-          <Text fontSize="3xl">
+        <>
+          <Text fontSize="3xl" mb={4}>
             <span ref={introRef} />
           </Text>
-          <br />
+          <Text color={secondaryTextColor[colorMode]} fontSize="2xl">
+            I'm a software entrepreneur who's currently working in enterprise
+            B2B FinTech software. The last company I co-founded, got acquired in
+            2019 by a large player supporting the Mergers and Acquisitions
+            (M&amp;A) vertical. Now, I am working on re-branding, developing,
+            and scaling that application, to reach the global market.
+            <br />
+            <br />
+            I love to work with ReactJS, Ruby, Python, and NodeJS. I've started
+            multiple boutique software companies over the years. I have
+            experience working with local and state governments, automotive
+            dealerships, Fortune 500 companies, social media ad agencies, and
+            fun small problems such as local rideshare advertising, car
+            dealership form processing, open water swimmer safety, and more!
+            <br />
+            <br />I plan on continuing to ship until I get tech-sick.
+          </Text>
           <>
-            I'm a Colorado based software engineer, full-stack developer and
-            front-end designer and have been working in this field the past 3
-            years. I'm experienced in HTML5, JS, CSS3 and modern libraries in
-            React, NodeJS and Next.js.
-            <br />
-            <br />
-            Currently working full-time as a Software Engineer & front-end dev
-            at Raytheon, a well known defense contractor.
             <br />
             <Button
               as="a"
@@ -75,13 +89,12 @@ const Index = () => {
               className="pointer-hand"
               aria-label="Grab My Resume"
               variantColor="teal"
+              mb={4}
             >
               Grab My Resume
             </Button>
           </>
-        </div>
-        <br />
-        <br />
+        </>
         <Divider borderColor={borderColor[colorMode]} my={8} w="100%" />;
         {/* <Flex
           flexDirection="column"
