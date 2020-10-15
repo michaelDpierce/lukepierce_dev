@@ -31,7 +31,7 @@ export default (frontMatter) => {
     return (
       <Container>
         <BlogSeo
-          url={`https://leerob.io/newsletter/${slug}`}
+          url={`https://michaelpierce.dev/newsletter/${slug}`}
           {...frontMatter}
         />
         <Stack

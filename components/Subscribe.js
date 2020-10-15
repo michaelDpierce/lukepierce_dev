@@ -88,8 +88,8 @@ const Subscribe = () => {
         Subscribe to the Newsletter
       </Heading>
       <Text>
-        Get emails from me about web development, tech, and early access to new
-        articles.
+        Get emails from me about web development, tech, life, and early access
+        to new articles.
       </Text>
       <InputGroup size="md" mt={4}>
         <Input

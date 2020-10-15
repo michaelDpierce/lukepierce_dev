@@ -1,16 +1,16 @@
 {
-  "name": "lukepierce.dev",
-  "description": "Luke Pierce Personal Portfolio & Blog",
+  "name": "michaelpierce.dev",
+  "description": "Michael Pierce Personal Portfolio & Blog",
   "version": "1.0.0",
   "author": {
-    "name": "Luke Pierce",
-    "email": "lpierce1313@gmail.com",
-    "url": "https://lukepierce.dev"
+    "name": "Michael Pierce",
+    "email": "matchmike1313@gmail.com",
+    "url": "https://michaelpierce.dev"
   },
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lpierce1313/lukepierce_dev.git"
+    "url": "git@github.com:michaelDpierce/michael_pierce_dev.git"
   },
   "scripts": {
     "build": "next build",

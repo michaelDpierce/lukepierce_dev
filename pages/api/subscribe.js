@@ -16,7 +16,7 @@ export default async (req, res) => {
       {
         body: JSON.stringify({
           email,
-          tags: ["lukepierce.dev"],
+          tags: ["michaelpierce.dev"],
         }),
         headers: {
           Authorization: `Token ${API_KEY}`,

@@ -28,9 +28,9 @@ const trans = (x, y, s) =>
 
 const trackGoal = (title) => {
   const goalCodes = {
-    SpeedyNote: "RV7BXBOK",
-    "Milehigh Lawncare": "EFNZBA9U",
-    "LP Photography": "MDYDWSYT",
+    DigiQuatics: "APZLB1UL",
+    AutoLytx: "ZCTCUPK9",
+    BankerBox: "XDQEADTY",
   };
 
   Fathom.trackGoal(goalCodes[title], 0);

@@ -67,8 +67,8 @@ const About = () => {
               About Me
             </Heading>
             <Text color={secondaryTextColor[colorMode]} mb={4}>
-              My name is Luke Pierce and I am born and raised in Lakewood, CO. I
-              graduated from Colorado School of Mines with an Electrical
+              My name is Michael Pierce and I am born and raised in Lakewood,
+              CO. I graduated from Colorado School of Mines with an Electrical
               Engineering degree at the top of my class. I decided after I
               completed my degree that I did not have a passion for Electrical
               Engineering even though I understood it very well. Web development
@@ -83,20 +83,13 @@ const About = () => {
               developer.
             </Text>
             <Text color={secondaryTextColor[colorMode]} mb={4}>
-              Aside from programming, I am very passionate about fitness and
-              adventuring outdoors. Everyday, I go to the gym and do strength
-              training and cardio. I play sports leagues twice a week, such as,
-              Spikeball, Volleyball, Basketball, Football, and Tennis. I love
-              the mountains in Colorado, so I usually try to hike 1-2 times per
-              week. Overall, I live a well balanced life as I am able to work a
-              job that I am passionate about and am able to exercise and be
-              outdoors all of the time.
-            </Text>
-            <Text color={secondaryTextColor[colorMode]} mb={4}>
-              Someday, I would like to travel to at least 50 different
-              countries, learn multiple languages, and visit every state in the
-              United States. Below, are places that I have travelled to so far,
-              but there will be many more to come.
+              I was born and raised in beautiful Denver, CO. I grew up camping,
+              hiking, and enjoying the great outdoors. At a young age, I started
+              to build computers, learn to code, and fall in love with all
+              things tech. I have a maltese yorkie named George, who my family
+              all calls "Tuna" after Jim from The Office. I am an avid traveler,
+              whiskey and cigar connoisseur, and I plan on retiring early, big
+              proponet of the F.I.R.E. movement.
             </Text>
             <Heading letterSpacing="tight" mb={2} as="h2" size="2xl">
               My US Travels

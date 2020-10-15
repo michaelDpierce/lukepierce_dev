@@ -31,7 +31,7 @@
         },
         {
           "key": "Access-Control-Allow-Origin",
-          "value": "https://*.lukepierce.dev"
+          "value": "https://*.michaelpierce.dev"
         },
         {
           "key": "Strict-Transport-Security",
@@ -39,7 +39,7 @@
         },
         {
           "key": "Permissions-Policy",
-          "value": "geolocation=(self \"https://lukepierce.dev\"); microphone=()"
+          "value": "geolocation=(self \"https://michaelpierce.dev\"); microphone=()"
         },
         {
           "key": "Content-Security-Policy",

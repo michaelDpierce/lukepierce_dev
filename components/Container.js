@@ -109,7 +109,7 @@ const Container = ({ children }) => {
                   className="pointer-hand"
                   height="60px"
                   src="/static/images/signature-white.png"
-                  title="Luke Pierce Signature"
+                  title="Michael Pierce Signature"
                 />
               </a>
             ) : (
@@ -118,7 +118,7 @@ const Container = ({ children }) => {
                   className="pointer-hand"
                   height="60px"
                   src="/static/images/signature-black.png"
-                  title="Luke Pierce Signature"
+                  title="Michael Pierce Signature"
                 />
               </a>
             )}
