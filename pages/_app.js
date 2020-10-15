@@ -1,3 +1,7 @@
+// =============================================================================
+// Copyright © 2020 Michael Pierce. All rights reserved.
+// =============================================================================
+
 import "@/styles/index.css";
 
 import * as Fathom from "fathom-client";

@@ -1,18 +1,24 @@
 /** @jsx jsx */
+
+// =============================================================================
+// Copyright © 2020 Michael Pierce. All rights reserved.
+// =============================================================================
+
 import {
   Box,
   Callout,
   Code,
+  Divider,
   Heading,
   Kbd,
   Link,
   PseudoBox,
   Text,
-  Divider,
-  useColorMode
-} from '@chakra-ui/core';
-import { jsx } from '@emotion/core';
-import NextLink from 'next/link';
+  useColorMode,
+} from "@chakra-ui/core";
+
+import NextLink from "next/link";
+import { jsx } from "@emotion/core";
 
 const Table = (props) => (
   <Box overflowX="scroll" w="full">
@@ -23,8 +29,8 @@ const Table = (props) => (
 const THead = (props) => {
   const { colorMode } = useColorMode();
   const bg = {
-    light: 'gray.50',
-    dark: 'whiteAlpha.100'
+    light: "gray.50",
+    dark: "whiteAlpha.100",
   };
 
   return (
@@ -54,12 +60,12 @@ const TData = (props) => (
 const CustomLink = (props) => {
   const { colorMode } = useColorMode();
   const color = {
-    light: 'hsl(208, 99%, 44%)',
-    dark: 'hsl(208, 95%, 68%)'
+    light: "hsl(208, 99%, 44%)",
+    dark: "hsl(208, 95%, 68%)",
   };
 
   const href = props.href;
-  const isInternalLink = href && (href.startsWith('/') || href.startsWith('#'));
+  const isInternalLink = href && (href.startsWith("/") || href.startsWith("#"));
 
   if (isInternalLink) {
     return (
@@ -75,8 +81,8 @@ const CustomLink = (props) => {
 const Quote = (props) => {
   const { colorMode } = useColorMode();
   const bgColor = {
-    light: 'blue.50',
-    dark: 'blue.900'
+    light: "blue.50",
+    dark: "blue.900",
   };
 
   return (
@@ -87,10 +93,10 @@ const Quote = (props) => {
       variant="left-accent"
       status="info"
       css={{
-        '> *:first-of-type': {
+        "> *:first-of-type": {
           marginTop: 0,
-          marginLeft: 8
-        }
+          marginLeft: 8,
+        },
       }}
       {...props}
     />
@@ -100,19 +106,19 @@ const Quote = (props) => {
 const DocsHeading = (props) => (
   <Heading
     css={{
-      scrollMarginTop: '100px',
-      scrollSnapMargin: '100px', // Safari
-      '&[id]': {
-        pointerEvents: 'none'
+      scrollMarginTop: "100px",
+      scrollSnapMargin: "100px", // Safari
+      "&[id]": {
+        pointerEvents: "none",
       },
-      '&[id]:before': {
-        display: 'block',
-        height: ' 6rem',
-        marginTop: '-6rem',
-        visibility: 'hidden',
-        content: `""`
+      "&[id]:before": {
+        display: "block",
+        height: " 6rem",
+        marginTop: "-6rem",
+        visibility: "hidden",
+        content: `""`,
       },
-      '&[id]:hover a': { opacity: 1 }
+      "&[id]:hover a": { opacity: 1 },
     }}
     {...props}
     mb="1em"
@@ -129,7 +135,7 @@ const DocsHeading = (props) => (
           outline="none"
           _focus={{
             opacity: 1,
-            boxShadow: 'outline'
+            boxShadow: "outline",
           }}
           opacity="0"
           ml="0.375rem"
@@ -145,8 +151,8 @@ const DocsHeading = (props) => (
 const Hr = () => {
   const { colorMode } = useColorMode();
   const borderColor = {
-    light: 'gray.200',
-    dark: 'gray.600'
+    light: "gray.200",
+    dark: "gray.600",
   };
 
   return <Divider borderColor={borderColor[colorMode]} my={4} w="100%" />;
@@ -170,7 +176,7 @@ const MDXComponents = {
   ul: (props) => <Box as="ul" pt={2} pl={4} ml={2} {...props} />,
   ol: (props) => <Box as="ol" pt={2} pl={4} ml={2} {...props} />,
   li: (props) => <Box as="li" pb={1} {...props} />,
-  blockquote: Quote
+  blockquote: Quote,
 };
 
 export { CustomLink };

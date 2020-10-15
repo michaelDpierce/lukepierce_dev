@@ -1,3 +1,7 @@
+// =============================================================================
+// Copyright © 2020 Michael Pierce. All rights reserved.
+// =============================================================================
+
 import React, { useEffect, useRef } from "react";
 
 import Typed from "typed.js";

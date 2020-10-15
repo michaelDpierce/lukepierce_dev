@@ -1,4 +1,7 @@
-import React from "react";
+// =============================================================================
+// Copyright © 2020 Michael Pierce. All rights reserved.
+// =============================================================================
+
 import { theme as chakraTheme } from "@chakra-ui/core";
 
 const theme = {

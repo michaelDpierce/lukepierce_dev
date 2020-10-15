@@ -1,3 +1,7 @@
+// =============================================================================
+// Copyright © 2020 Michael Pierce. All rights reserved.
+// =============================================================================
+
 import { Dot } from "./Dot";
 
 export default class CanvasBackground extends React.Component {

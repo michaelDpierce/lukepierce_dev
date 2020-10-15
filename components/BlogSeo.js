@@ -1,3 +1,7 @@
+// =============================================================================
+// Copyright © 2020 Michael Pierce. All rights reserved.
+// =============================================================================
+
 import { ArticleJsonLd, NextSeo } from "next-seo";
 import { FULL_NAME, HOST_URL } from "@/lib/constants";
 

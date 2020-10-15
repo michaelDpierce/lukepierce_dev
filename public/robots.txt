@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://lukepierce.dev/sitemap.xml
+Sitemap: https://michaelpierce.dev/sitemap.xml

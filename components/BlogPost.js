@@ -1,3 +1,7 @@
+// =============================================================================
+// Copyright © 2020 Michael Pierce. All rights reserved.
+// =============================================================================
+
 import { Box, Flex, Heading, Link, Text, useColorMode } from "@chakra-ui/core";
 
 import NextLink from "next/link";

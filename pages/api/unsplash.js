@@ -1,3 +1,7 @@
+// =============================================================================
+// Copyright © 2020 Michael Pierce. All rights reserved.
+// =============================================================================
+
 import Unsplash, { toJson } from "unsplash-js";
 
 import { UNSPLASH_USER } from "@/lib/constants";

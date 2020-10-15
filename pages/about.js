@@ -1,3 +1,7 @@
+// =============================================================================
+// Copyright © 2020 Michael Pierce. All rights reserved.
+// =============================================================================
+
 import { FULL_NAME, HOST_URL } from "../lib/constants";
 import { Flex, Heading, Stack, Text, useColorMode } from "@chakra-ui/core";
 import React, { useEffect, useState } from "react";

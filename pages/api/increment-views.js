@@ -1,3 +1,7 @@
+// =============================================================================
+// Copyright © 2020 Michael Pierce. All rights reserved.
+// =============================================================================
+
 import db from "@/lib/db-admin";
 
 const incrementViews = async (req, res) => {

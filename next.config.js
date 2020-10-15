@@ -1,3 +1,7 @@
+// =============================================================================
+// Copyright © 2020 Michael Pierce. All rights reserved.
+// =============================================================================
+
 const readingTime = require("reading-time");
 const mdxPrism = require("mdx-prism");
 const withMdxEnhanced = require("next-mdx-enhanced");
