@@ -10,7 +10,8 @@ class MyDocument extends Document {
           <meta content="#ffffff" name="theme-color" />
           <meta content="#ffffff" name="msapplication-TileColor" />
           <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
-          <link href="/static/favicons/site.webmanifest" rel="manifest" />
+          <link rel="manifest" href="/static/favicons/site.webmanifest" />
+
           <link
             rel="preconnect"
             href="https://cdn.usefathom.com"
@@ -44,6 +45,11 @@ class MyDocument extends Document {
             rel="icon"
             sizes="16x16"
             type="image/png"
+          />
+          <link
+            rel="mask-icon"
+            href="/static/favicons/safari-pinned-tab.svg"
+            color="#5bbad5"
           />
         </Head>
         <body>
