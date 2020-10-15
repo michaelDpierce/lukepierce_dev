@@ -49,7 +49,7 @@ const Index = () => {
         m="0 auto 4rem auto"
         maxWidth="700px"
       >
-        <Text fontSize="6xl">Hi I’m {FULL_NAME}</Text>
+        <Text fontSize="6xl">Hi, I’m {FULL_NAME}</Text>
         <div>
           <Text fontSize="3xl">
             <span ref={introRef} />

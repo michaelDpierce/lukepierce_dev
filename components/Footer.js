@@ -15,10 +15,10 @@ import {
   useDisclosure,
 } from "@chakra-ui/core";
 import {
+  FULL_NAME,
   GITHUB_URL,
   LINKEDIN_URL,
   TWITTER_URL,
-  YOUTUBE_URL,
 } from "@/lib/constants";
 
 import ContactEmail from "@/components/ContactEmail";
@@ -81,15 +81,6 @@ const Footer = () => {
               variant="ghost"
             />
           </Link>
-          <Link href={YOUTUBE_URL} title="YouTube" isExternal>
-            <IconButton
-              aria-label="YouTube"
-              icon="youtube"
-              size="lg"
-              color="gray.500"
-              variant="ghost"
-            />
-          </Link>
           <IconButton
             aria-label="Email"
             icon="mail"
@@ -122,7 +113,7 @@ const Footer = () => {
         >
           <Text
             textAlign={"center"}
-          >{`© ${year} Luke Pierce. All rights reserved.`}</Text>
+          >{`© ${year} ${FULL_NAME}. All rights reserved.`}</Text>
         </Box>
       </Flex>
       <Modal isOpen={isOpen} onClose={onClose}>
