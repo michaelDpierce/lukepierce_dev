@@ -17,6 +17,7 @@
 - `_app.js`
 - `api/subscribe.js`
 - `lib/db.js`
+- `/layouts/index.js`
 
 Note:
 Remove any social service you don't want from Footer.js

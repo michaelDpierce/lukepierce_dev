@@ -67,7 +67,7 @@ export default (frontMatter) => {
                 <Avatar
                   size="xs"
                   name={FULL_NAME}
-                  src="/static/images/luke.png"
+                  src="/static/images/me.png"
                   mr={2}
                 />
                 <Text fontSize="sm" color={textColor[colorMode]}>
