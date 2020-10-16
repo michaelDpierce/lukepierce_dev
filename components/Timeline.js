@@ -163,7 +163,7 @@ const Timeline = () => {
         2013
       </Heading>
       <List>
-        <TimelineStep title="Started by First Company 💻">
+        <TimelineStep title="Started My First Company 💻">
           In 2013 I started DigiQuatics. The seed of an idea I had when I was
           the pool manager had grown and I wanted to pursue a SaaS solution.
           Besides some C++, UNIX, and HTML/CSS in college I had no real

@@ -85,7 +85,7 @@ const Subscribe = () => {
       w="100%"
     >
       <Heading as="p" size="lg" mb={2}>
-        Subscribe to the Newsletter
+        Subscribe to My Newsletter
       </Heading>
       <Text>
         Get emails from me about web development, tech, life, and early access

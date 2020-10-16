@@ -2,8 +2,18 @@
 // Copyright © 2020 Michael Pierce. All rights reserved.
 // =============================================================================
 
+import {
+  Divider,
+  Flex,
+  Heading,
+  Image,
+  List,
+  ListItem,
+  Stack,
+  Text,
+  useColorMode,
+} from "@chakra-ui/core";
 import { FULL_NAME, HOST_URL } from "../lib/constants";
-import { Flex, Heading, Stack, Text, useColorMode } from "@chakra-ui/core";
 import React, { useEffect, useState } from "react";
 
 import Container from "@/components/Container";
@@ -27,6 +37,11 @@ const About = () => {
   const secondaryTextColor = {
     light: "gray.700",
     dark: "gray.400",
+  };
+
+  const borderColor = {
+    light: "gray.200",
+    dark: "gray.600",
   };
 
   const [loading, setLoading] = useState(false);
@@ -66,30 +81,34 @@ const About = () => {
             <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
               About Me
             </Heading>
-            <Text color={secondaryTextColor[colorMode]} mb={4}>
-              My name is Michael Pierce and I am born and raised in Lakewood,
-              CO. I graduated from Colorado School of Mines with an Electrical
-              Engineering degree at the top of my class. I decided after I
-              completed my degree that I did not have a passion for Electrical
-              Engineering even though I understood it very well. Web development
-              is my passion, I taught myself <Text as="b">HTML5</Text>,{" "}
-              <Text as="b">CSS</Text>, <Text as="b">JavaScript</Text>,{" "}
-              <Text as="b">Ruby on Rails</Text>, <Text as="b">React</Text>,{" "}
-              <Text as="b">NextJS</Text>, <Text as="b">Python</Text>, and{" "}
-              <Text as="b">NodeJS</Text>. My favorite language being NextJS
-              which is one this portfolio is made from. I hope someday that I
-              can live in a apartment/town home in downtown Denver, have amazing
-              city views, and work for a small startup as a front-end web
-              developer.
+            <Image
+              className="pointer-hand"
+              src="/static/images/peru.png"
+              title="Peru 2019"
+              alt="Peru 2019"
+            />
+            <Divider borderColor={borderColor[colorMode]} my={8} w="100%" />
+            <Text color={secondaryTextColor[colorMode]} fontSize="2xl" mb={4}>
+              As of April 2019, I've been a Managing Principal Engineer for a
+              FinTech company in Boston, MA.
+              <br />
+              <br />I was born and raised in beautiful Denver, CO. I grew up
+              camping, hiking, and enjoying the great outdoors. At a young age,
+              I started to build computers, learn to code, and fall in love with
+              all things tech. I have a maltese yorkie named George, who my
+              family all calls "Tuna" after Jim from The Office. I am an avid
+              traveler, whiskey and cigar connoisseur, and I plan on retiring
+              early. I'm a big proponet of the F.I.R.E. movement.
             </Text>
-            <Text color={secondaryTextColor[colorMode]} mb={4}>
-              I was born and raised in beautiful Denver, CO. I grew up camping,
-              hiking, and enjoying the great outdoors. At a young age, I started
-              to build computers, learn to code, and fall in love with all
-              things tech. I have a maltese yorkie named George, who my family
-              all calls "Tuna" after Jim from The Office. I am an avid traveler,
-              whiskey and cigar connoisseur, and I plan on retiring early, big
-              proponet of the F.I.R.E. movement.
+            <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
+              Get In Touch
+            </Heading>
+            <Text color={secondaryTextColor[colorMode]} fontSize="2xl" mb={4}>
+              <List as="ol" styleType="decimal">
+                <ListItem>IndieHackers - @matchmike1313</ListItem>
+                <ListItem>Hacker News - @matchmike1313</ListItem>
+                <ListItem>GitHub - @michaelDpierce</ListItem>
+              </List>
             </Text>
             <Heading letterSpacing="tight" mb={2} as="h2" size="2xl">
               My US Travels
