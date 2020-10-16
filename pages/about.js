@@ -7,6 +7,7 @@ import {
   Flex,
   Heading,
   Image,
+  Link,
   List,
   ListItem,
   Stack,
@@ -105,9 +106,25 @@ const About = () => {
             </Heading>
             <Text color={secondaryTextColor[colorMode]} fontSize="2xl" mb={4}>
               <List as="ol" styleType="decimal">
-                <ListItem>IndieHackers - @matchmike1313</ListItem>
-                <ListItem>Hacker News - @matchmike1313</ListItem>
-                <ListItem>GitHub - @michaelDpierce</ListItem>
+                <ListItem>
+                  <Link
+                    href="https://www.indiehackers.com/matchmike1313"
+                    title="IndieHackers"
+                    isExternal
+                  >
+                    <a>IndieHackers - @matchmike1313</a>
+                  </Link>
+                </ListItem>
+                <ListItem>
+                  <Link
+                    href="https://news.ycombinator.com/user?id=matchmike1313"
+                    title="HackerNews"
+                    isExternal
+                  >
+                    <a>Hacker News - @matchmike1313</a>
+                  </Link>
+                </ListItem>
+                <ListItem>Email - Contact Link Above</ListItem>
               </List>
             </Text>
             <Heading letterSpacing="tight" mb={2} as="h2" size="2xl">
