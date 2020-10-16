@@ -66,17 +66,21 @@ const Index = () => {
           </Text>
           <Text color={secondaryTextColor[colorMode]} fontSize="2xl">
             I'm a software entrepreneur who's currently working in enterprise
-            B2B FinTech software. The last company I co-founded, got acquired in
-            2019 by a large player supporting the Mergers and Acquisitions
-            (M&amp;A) vertical. Now, I am working on re-branding, developing,
-            and scaling that application, to reach the global market.
+            B2B FinTech software. The last company I co-founded, got acquired in{" "}
+            <Text as="u">2019</Text> by a international FinTech player
+            addressing software for the Mergers and Acquisitions (M&amp;A)
+            market. Now, I am working on re-branding, further developing, and
+            scaling that application, to reach the global market.
+            <br />
+            <br />I love to work with <Text as="b">ReactJS</Text>,{" "}
+            <Text as="b">Next.JS</Text>, <Text as="b">Ruby on Rails</Text>,{" "}
+            <Text as="b">Flask & Python</Text>, and <Text as="b">Node.JS</Text>.
             <br />
             <br />
-            I love to work with ReactJS, Ruby, Python, and NodeJS. I've started
-            multiple boutique software companies over the years. I have
-            experience working with local and state governments, automotive
+            I've started multiple boutique software companies over the years. I
+            have experience working with local and state governments, automotive
             dealerships, Fortune 500 companies, social media ad agencies, and
-            fun small problems such as local rideshare advertising, car
+            fun small side-projects such as local rideshare advertising, car
             dealership form processing, open water swimmer safety, and more!
             <br />
             <br />I plan on continuing to ship until I get tech-sick.
@@ -121,25 +125,22 @@ const Index = () => {
           maxWidth="700px"
         >
           <Heading letterSpacing="tight" mb={4} size="xl" fontWeight={700}>
-            Projects
+            Recent Projects
           </Heading>
           <ProjectCard
-            title="SpeedyNote"
-            description="A free website application for sending fast, secure & private Notes with Next.js, Tailwind, and React"
-            href="https://speedynote.app/"
-            icon="react2025"
+            title="BankerBox"
+            description="Simple CRM + Deal Manager for Investment Bankers. Streamlined M&amp;A outreach to buyers. Acquired in 2019 by SS&amp;C."
+            href="https://dealmarketing.intralinks.com/"
           />
           <ProjectCard
-            title="Milehigh Lawncare"
-            description="A simple local landscaping application built by me using NodeJS and Bulma and hosted on Netlify/Cloudflare"
-            href="https://www.milehighlawncare.com/"
-            icon="jamstackfns"
+            title="AutoLytx"
+            description="Automotive inventory analytics. Simplified. Helping automobile manufacturers and dealers harness the power of data. Currently owned and operating."
+            href="https://www.autolytx.com/"
           />
           <ProjectCard
-            title="LP Photography"
-            description="I am into photography, I had purchased a Nikon D3400 camera and I wanted to share my work on a website so people could easily view my work. This is my photography portfolio. "
-            href="https://lpphotography.herokuapp.com/home.html"
-            icon="nextjs"
+            title="DigiQuatics"
+            description="Commercial Swimming Pool Management Redefined. Staff Scheduling, Chemicals, Maintenance, and more. Sold to private buyer in 2019."
+            href="https://digiquatics.com/"
           />
         </Flex>
         <Timeline />
@@ -156,13 +157,13 @@ const Index = () => {
             </Text>
             <br />
             <Button mx={1} aria-label="Download PDF Resume">
-              <a href="luke-pierce-resume.pdf" download>
-                Download PDF
+              <a href="michael-pierce-resume.pdf" download>
+                PDF
               </a>
             </Button>
             <Button mx={1} aria-label="Download DOCX Resume">
-              <a href="luke-pierce-resume.docx" download>
-                Download DOCX
+              <a href="michael-pierce-resume.docx" download>
+                DOCX
               </a>
             </Button>
           </ModalBody>
