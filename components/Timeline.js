@@ -7,7 +7,6 @@ import {
   Divider,
   Flex,
   Heading,
-  Icon,
   Link,
   List,
   ListItem,
@@ -37,7 +36,6 @@ const TimelineStep = ({ title, children }) => {
     <ListItem>
       <Stack ml={2} mb={4}>
         <Flex align="center">
-          <Icon name="check-circle" mr={2} color="whatsapp.500" />
           <Text fontWeight="medium">{title}</Text>
         </Flex>
         <Text color={color[colorMode]} ml={6}>
@@ -55,7 +53,7 @@ const FullTimeline = () => (
       2008
     </Heading>
     <List>
-      <TimelineStep title="Seed of My First Start-Up Idea">
+      <TimelineStep title="Seed of My First Start-Up Idea 🌱">
         When I was 15 years old, I started working. By the age of 19, I fell
         into being a manager of a local country club pool. The entire staff quit
         to protest the management company that hired them. I stayed on, as the
@@ -71,7 +69,7 @@ const FullTimeline = () => (
       2006
     </Heading>
     <List>
-      <TimelineStep title="Early Acceptance into College">
+      <TimelineStep title="Early Acceptance into College 🎓">
         At the age of 16 I started my college career early. I will never forgot
         the feeling of being a young kid sitting in the front-row of my
         Mathematics class, surrounded by my more matured peers.
@@ -82,7 +80,7 @@ const FullTimeline = () => (
       2005
     </Heading>
     <List>
-      <TimelineStep title="First International Trip">
+      <TimelineStep title="First International Trip 🇳🇿">
         My best friend in highschool invited me to go to New Zealand with him
         and his family. The plan was to do missions work and make a sizable
         donation to a school in Tonga, after our trip to NZ. This was my first
@@ -94,7 +92,7 @@ const FullTimeline = () => (
       2001
     </Heading>
     <List>
-      <TimelineStep title="Built My First Computer">
+      <TimelineStep title="Built My First Computer 💾">
         As my interest in tech grew, I built my first computer.
       </TimelineStep>
     </List>
@@ -142,10 +140,10 @@ const Timeline = () => {
         2019
       </Heading>
       <List>
-        <TimelineStep title="Busiest Year of My Life">
+        <TimelineStep title="Busiest Year of My Life ⏳">
           Wow... 2019 was a whirlwind. From selling DigiQuatics, to getting
-          BankerBox acquired, to moving across the country, this year was crazy
-          from start to finish. You can read all about it in this{" "}
+          BankerBox acquired, to moving across the country, this year was SUPER
+          crazy from start to finish. You can read all about it in this{" "}
           <Link href="https://mpierce.blog/posts/my-eventful-2019" isExternal>
             <Text as="u">blog post</Text>
           </Link>
@@ -183,7 +181,7 @@ const Timeline = () => {
         2011
       </Heading>
       <List>
-        <TimelineStep title="Professor of Mathematics 🔢">
+        <TimelineStep title="Professor of Mathematics 👨‍🏫">
           Math has always been one of my passions. I spent years as a tutor and
           decided to become a professor at a local community college.
         </TimelineStep>
@@ -199,7 +197,7 @@ const Timeline = () => {
         2010
       </Heading>
       <List>
-        <TimelineStep title="Graduated from Colorado School of Mines 🎓 🏫">
+        <TimelineStep title="Graduated from Colorado School of Mines 🏫">
           I graduated from Colorado School of Mines with a Bachelors in Science
           in Economics.
         </TimelineStep>
