@@ -80,7 +80,7 @@ const About = () => {
             alignItems="flex-start"
             maxWidth="700px"
           >
-            <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
+            <Heading letterSpacing="tight" mb={4} as="h1" size="2xl">
               About Me
             </Heading>
             <Image
@@ -113,7 +113,7 @@ const About = () => {
               Curious about my coding setup?{" "}
               <NextLink href="/setup" passHref>
                 <Link color={secondaryTextColor[colorMode]}>
-                  Check it out here!
+                  <Text as="u">Check it out here!</Text>
                 </Link>
               </NextLink>
               <br />

@@ -147,7 +147,7 @@ const Timeline = () => {
           BankerBox acquired, to moving across the country, this year was crazy
           from start to finish. You can read all about it in this{" "}
           <Link href="https://mpierce.blog/posts/my-eventful-2019" isExternal>
-            {"blog post"}
+            <Text as="u">blog post</Text>
           </Link>
           .
         </TimelineStep>

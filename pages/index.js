@@ -73,7 +73,9 @@ const Index = () => {
             Specifically, my new role focuses on launching our product to a
             global market. You can learn more about me{" "}
             <NextLink href="/about" passHref>
-              <Link color={secondaryTextColor[colorMode]}>here</Link>
+              <Link color={secondaryTextColor[colorMode]}>
+                <Text as="u">here</Text>
+              </Link>
             </NextLink>
             .
           </Text>

@@ -77,6 +77,7 @@ const Setup = () => {
               title="Setup Angle One"
               alt="Setup Angle One"
             />
+
             <Divider borderColor={borderColor[colorMode]} my={8} w="100%" />
             <Image
               className="pointer-hand"
@@ -93,7 +94,9 @@ const Setup = () => {
                     title="Dyson"
                     isExternal
                   >
-                    <a>Dyson lightcycle Morph Light</a>
+                    <a>
+                      <Text as="u">Dyson lightcycle Morph Light</Text>
+                    </a>
                   </Link>{" "}
                   - This is a fantastic light. From the color temperature
                   adjustments to the sunrise-to-sunset settings every aspect of
@@ -105,7 +108,9 @@ const Setup = () => {
                     title="Amazon"
                     isExternal
                   >
-                    <a>LG 27 Inch UltraFine 5K Display</a>
+                    <a>
+                      <Text as="u">LG 27 Inch UltraFine 5K Display</Text>
+                    </a>
                   </Link>{" "}
                   - Great monitor for Macbook Pro users with USB-C looking for
                   HiDPI pixel scaling. You can use a single cable to connect the
@@ -120,7 +125,9 @@ const Setup = () => {
                     title="Apple"
                     isExternal
                   >
-                    <a>Apple 16 Inch Macbook Pro</a>
+                    <a>
+                      <Text as="u">Apple 16 Inch Macbook Pro</Text>
+                    </a>
                   </Link>{" "}
                   - Could not be happier with my 16 inch Spacegray Macbook Pro.
                   16GB of ram gives me a ton of flexability with running Docker
@@ -133,7 +140,9 @@ const Setup = () => {
                     title="Amazon"
                     isExternal
                   >
-                    <a>mStand by Rain Design</a>
+                    <a>
+                      <Text as="u">mStand by Rain Design</Text>
+                    </a>
                   </Link>{" "}
                   Simple but high functioning laptop stand in Spacegray to match
                   my Mac. Has a nice cable hole at the bottom for my single
@@ -145,7 +154,9 @@ const Setup = () => {
                     title="Grovemade"
                     isExternal
                   >
-                    <a>Small Dark Gray Wool Deskpad</a>
+                    <a>
+                      <Text as="u">Small Dark Gray Wool Deskpad</Text>
+                    </a>
                   </Link>{" "}
                   Lovely deskpad that's handmade from Grovemade. Great company
                   out of Portland, OR. They offer several sizes and colors so be
@@ -157,7 +168,11 @@ const Setup = () => {
                     title="Amazon"
                     isExternal
                   >
-                    <a>Code V3 87-Key Illuminated Mechanical Keyboard</a>
+                    <a>
+                      <Text as="u">
+                        Code V3 87-Key Illuminated Mechanical Keyboard
+                      </Text>
+                    </a>
                   </Link>{" "}
                   Coding is all about productivity, and part of that includes
                   the quality of your display, keyboard, and mouse. I'm loving
@@ -171,7 +186,9 @@ const Setup = () => {
                     title="Amazon"
                     isExternal
                   >
-                    <a>Logitech MX Master 3 Mouse</a>
+                    <a>
+                      <Text as="u">Logitech MX Master 3 Mouse</Text>
+                    </a>
                   </Link>{" "}
                   Great mouse for multi-machine users. Using the memory setting
                   I can switch bluetooth connections in a fraction of a second.
@@ -185,7 +202,9 @@ const Setup = () => {
                     title="Nomad Goods"
                     isExternal
                   >
-                    <a>Kelvar Lightning Cable USB-C</a>
+                    <a>
+                      <Text as="u">Kelvar Lightning Cable USB-C</Text>
+                    </a>
                   </Link>{" "}
                   Having been super frustrated with low-quality USB-C/USB-A to
                   Lightning cables I found Nomad Goods's braided / kelvar cable.
@@ -197,7 +216,11 @@ const Setup = () => {
                     title="Laura Davidson Direct"
                     isExternal
                   >
-                    <a>SOHO Premier Ribbed Management Chair</a>
+                    <a>
+                      <Text as="u">
+                        Laura SOHO Premier Ribbed Management Chair
+                      </Text>
+                    </a>
                   </Link>{" "}
                   This chair is absolutely amazing. It is made within design and
                   quality specs of Herman Miller at a tenth of the cost. I
@@ -209,7 +232,9 @@ const Setup = () => {
                     title="Fully"
                     isExternal
                   >
-                    <a>Fully Jarvis Standing Desk</a>
+                    <a>
+                      <Text as="u">Fully Jarvis Standing Desk</Text>
+                    </a>
                   </Link>{" "}
                   It's hard to call yourself a programmer in 2020 without a
                   standing desk. I love Fully desks and this is my second one.
