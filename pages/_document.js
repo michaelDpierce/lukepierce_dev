@@ -15,7 +15,12 @@ class MyDocument extends Document {
           <meta content="#ffffff" name="msapplication-TileColor" />
           <link href="/static/favicons/favicon.ico" rel="shortcut icon" />
           <link rel="manifest" href="/static/favicons/site.webmanifest" />
-
+          Curious about my coding setup?{" "}
+          <NextLink href="/setup" passHref>
+            <Link color={secondaryTextColor[colorMode]}>
+              check it out here!
+            </Link>
+          </NextLink>
           <link
             rel="preconnect"
             href="https://cdn.usefathom.com"

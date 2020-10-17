@@ -18,6 +18,7 @@ import { FULL_NAME, HOST_URL } from "../lib/constants";
 import React, { useEffect, useState } from "react";
 
 import Container from "@/components/Container";
+import NextLink from "next/link";
 import { NextSeo } from "next-seo";
 import Skeleton from "react-loading-skeleton";
 import dynamic from "next/dynamic";
@@ -107,6 +108,14 @@ const About = () => {
               <Text as="b">Ruby on Rails</Text>,{" "}
               <Text as="b">Flask & Python</Text>, and{" "}
               <Text as="b">Node.JS</Text>.
+              <br />
+              <br />
+              Curious about my coding setup?{" "}
+              <NextLink href="/setup" passHref>
+                <Link color={secondaryTextColor[colorMode]}>
+                  Check it out here!
+                </Link>
+              </NextLink>
               <br />
               <br />
               I've started multiple boutique software companies over the years.
