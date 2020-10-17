@@ -95,11 +95,26 @@ const About = () => {
               <br />
               <br />I was born and raised in beautiful Denver, CO. I grew up
               camping, hiking, and enjoying the great outdoors. At a young age,
-              I started to build computers, learn to code, and fall in love with
-              all things tech. I have a maltese yorkie named George, who my
-              family all calls "Tuna" after Jim from The Office. I am an avid
-              traveler, whiskey and cigar connoisseur, and I plan on retiring
-              early. I'm a big proponet of the F.I.R.E. movement.
+              I started to build computers, learning to code, and fell in love
+              with all things tech. I have a maltese yorkie named George, who my
+              family all calls "Tuna" after Jim from The Office. I'm an avid
+              traveler, whiskey and cigar connoisseur, and I plan on retiring by
+              55. I'm a big proponet of the F.I.R.E. movement.
+              <br />
+              <br />
+              Okay, let's talk tech! I love to work with{" "}
+              <Text as="b">ReactJS</Text>, <Text as="b">Next.JS</Text>,{" "}
+              <Text as="b">Ruby on Rails</Text>,{" "}
+              <Text as="b">Flask & Python</Text>, and{" "}
+              <Text as="b">Node.JS</Text>.
+              <br />
+              <br />
+              I've started multiple boutique software companies over the years.
+              I have explicit experience working with Fortune 500 companies,
+              local and state governments, automotive dealerships, investment
+              banks, and social media &amp; digital agencies,
+              <br />
+              <br />I plan on continuing to ship until I get tech-sick.
             </Text>
             <Heading letterSpacing="tight" mb={2} as="h1" size="2xl">
               Get In Touch

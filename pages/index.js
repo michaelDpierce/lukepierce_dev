@@ -7,6 +7,7 @@ import {
   Divider,
   Flex,
   Heading,
+  Link,
   Modal,
   ModalBody,
   ModalContent,
@@ -22,6 +23,7 @@ import { FULL_NAME, INTRO_TYPING } from "../lib/constants";
 
 // import BlogPost from "@/components/BlogPost";
 import Container from "@/components/Container";
+import NextLink from "next/link";
 import ProjectCard from "@/components/ProjectCard";
 import Subscribe from "@/components/Subscribe";
 import Timeline from "@/components/Timeline";
@@ -65,25 +67,15 @@ const Index = () => {
             <span ref={introRef} />
           </Text>
           <Text color={secondaryTextColor[colorMode]} fontSize="2xl">
-            I'm a software entrepreneur who's currently working in enterprise
-            B2B FinTech software. The last company I co-founded, got acquired in{" "}
-            <Text as="u">2019</Text> by a international FinTech player
-            addressing software for the Mergers and Acquisitions (M&amp;A)
-            market. Now, I am working on re-branding, further developing, and
-            scaling that application, to reach the global market.
-            <br />
-            <br />I love to work with <Text as="b">ReactJS</Text>,{" "}
-            <Text as="b">Next.JS</Text>, <Text as="b">Ruby on Rails</Text>,{" "}
-            <Text as="b">Flask & Python</Text>, and <Text as="b">Node.JS</Text>.
-            <br />
-            <br />
-            I've started multiple boutique software companies over the years. I
-            have experience working with local and state governments, automotive
-            dealerships, Fortune 500 companies, social media ad agencies, and
-            fun small side-projects such as local rideshare advertising, car
-            dealership form processing, open water swimmer safety, and more!
-            <br />
-            <br />I plan on continuing to ship until I get tech-sick.
+            I'm a multiple-time Software-As-A-Service (SaaS) founder and
+            currently led an engineering team in the R&amp;D division of Fintech
+            company as per the acquisition of my last company in 2019.
+            Specifically, my new role focuses on launching our product to a
+            global market. You can learn more about me{" "}
+            <NextLink href="/about" passHref>
+              <Link color={secondaryTextColor[colorMode]}>here</Link>
+            </NextLink>
+            .
           </Text>
           <>
             <br />
