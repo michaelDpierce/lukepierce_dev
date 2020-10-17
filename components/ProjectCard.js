@@ -12,6 +12,8 @@ import {
 } from "@chakra-ui/core";
 import { animated, useSpring } from "react-spring";
 
+import useHover from "@/components/useHover";
+
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 75,
   (x - window.innerWidth / 2) / 30,
@@ -36,13 +38,19 @@ const trackGoal = (title) => {
   Fathom.trackGoal(goalCodes[title], 0);
 };
 
-const ProjectCard = ({ title, description, href }) => {
+const ProjectCard = ({ title, description, href, color }) => {
   const { colorMode } = useColorMode();
 
   const borderColor = {
     light: "gray.200",
     dark: "gray.600",
   };
+
+  const divBackgroundStyle = {
+    color: color,
+  };
+
+  const [hoverRef, isHovered] = useHover();
 
   const [props, set] = useSpring(() => ({
     xys: [0, 0, 1],
@@ -56,38 +64,40 @@ const ProjectCard = ({ title, description, href }) => {
         onMouseLeave={() => set({ xys: [0, 0, 1] })}
         style={{ transform: props.xys.interpolate(trans) }}
       >
-        <Link
-          mb={4}
-          href={href}
-          onClick={() => trackGoal(title)}
-          title={title}
-          isExternal
-          _hover={{
-            boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.05)",
-            textDecoration: "none",
-          }}
-        >
-          <Flex
-            align="center"
-            border="1px solid"
-            borderColor={borderColor[colorMode]}
-            borderRadius={4}
-            p={4}
+        <div style={isHovered ? divBackgroundStyle : null} ref={hoverRef}>
+          <Link
+            mb={4}
+            href={href}
+            onClick={() => trackGoal(title)}
+            title={title}
+            isExternal
+            _hover={{
+              boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.05)",
+              textDecoration: "none",
+            }}
           >
-            <Stack>
-              <Heading
-                as="p"
-                size="md"
-                fontWeight="bold"
-                mb={4}
-                letterSpacing="tighter"
-              >
-                {title}
-              </Heading>
-              <Text lineHeight="1.3">{description}</Text>
-            </Stack>
-          </Flex>
-        </Link>
+            <Flex
+              align="center"
+              border="1px solid"
+              borderColor={isHovered ? color : borderColor[colorMode]}
+              borderRadius={4}
+              p={4}
+            >
+              <Stack backgroundColor="red">
+                <Heading
+                  as="p"
+                  size="md"
+                  fontWeight="bold"
+                  mb={4}
+                  letterSpacing="tighter"
+                >
+                  {title}
+                </Heading>
+                <Text lineHeight="1.3">{description}</Text>
+              </Stack>
+            </Flex>
+          </Link>
+        </div>
       </animated.div>
     </div>
   );

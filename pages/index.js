@@ -131,16 +131,19 @@ const Index = () => {
             title="BankerBox"
             description="Simple CRM + Deal Manager for Investment Bankers. Streamlined M&amp;A outreach to buyers. Acquired in 2019 by SS&amp;C."
             href="https://dealmarketing.intralinks.com/"
+            color="#7b45c7"
           />
           <ProjectCard
             title="AutoLytx"
             description="Automotive inventory analytics. Simplified. Helping automobile manufacturers and dealers harness the power of data. Currently owned and operating."
             href="https://www.autolytx.com/"
+            color="#16d0b1"
           />
           <ProjectCard
             title="DigiQuatics"
             description="Commercial Swimming Pool Management Redefined. Staff Scheduling, Chemicals, Maintenance, and more. Sold to private buyer in 2019."
             href="https://digiquatics.com/"
+            color="#394490"
           />
         </Flex>
         <Timeline />
