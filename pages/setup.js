@@ -131,8 +131,8 @@ const Setup = () => {
                   </Link>{" "}
                   - Could not be happier with my 16 inch Spacegray Macbook Pro.
                   16GB of ram gives me a ton of flexability with running Docker
-                  containers and intensive dev work, while the 1TB SSD is perect
-                  for all my data.
+                  containers and intensive dev work, while the 1TB SSD is
+                  perfect for all my data.
                 </ListItem>
                 <ListItem mb={6}>
                   <Link
@@ -182,7 +182,7 @@ const Setup = () => {
                 </ListItem>
                 <ListItem mb={6}>
                   <Link
-                    href="https://www.amazon.com/gp/product/B07MP1PV5B/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1"
+                    href="https://www.amazon.com/Logitech-Master-Advanced-Wireless-Mouse/dp/B07S395RWD/ref=pd_lpo_147_t_2/141-2612314-1330868?_encoding=UTF8&pd_rd_i=B07S395RWD&pd_rd_r=a95d290c-b79b-41c7-904e-44057fdbcd22&pd_rd_w=FxbyN&pd_rd_wg=1CVCT&pf_rd_p=7b36d496-f366-4631-94d3-61b87b52511b&pf_rd_r=NGVMP0EKX50SWPRA1PGA&psc=1&refRID=NGVMP0EKX50SWPRA1PGA"
                     title="Amazon"
                     isExternal
                   >
