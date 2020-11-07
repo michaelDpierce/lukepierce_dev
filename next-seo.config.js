@@ -22,7 +22,7 @@ const SEO = {
     description,
     images: [
       {
-        url: `${hostURL}/static/images/og.png`,
+        url: `${hostURL}/static/images/og-1280x720.png`,
         alt: title,
         width: 1280,
         height: 720,
