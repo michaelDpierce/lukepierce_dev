@@ -22,7 +22,7 @@ const SEO = {
     description,
     images: [
       {
-        url: `https://raw.githubusercontent.com/michaelDpierce/michael_pierce_dev/master/public/static/images/og.jpg`,
+        url: `${hostURL}/static/images/og.png`,
         alt: title,
         width: 1280,
         height: 720,
