@@ -67,11 +67,13 @@ const Index = () => {
             <span ref={introRef} />
           </Text>
           <Text color={secondaryTextColor[colorMode]} fontSize="2xl">
-            I'm a multiple-time Software-As-A-Service (SaaS) founder and
-            currently led an engineering team in the R&amp;D division of Fintech
-            company as per the acquisition of my last company in 2019.
-            Specifically, my new role focuses on launching our product to a
-            global market. You can learn more about me{" "}
+            I'm a software engineer, project manager, and multi-time SaaS
+            startup founder, passionate about connecting industries, like
+            financial technology, automotive manufacturing, and legaltech, with
+            consumer and operations data. Today, Michael leads post-merger
+            integration of his startup, BankerBox, with SS&amp;C Intralinks as
+            Principal Software Engineer Project Lead, based in Boston, MA. You
+            can read more about my background:{" "}
             <NextLink href="/about" passHref>
               <Link color={secondaryTextColor[colorMode]}>
                 <Text as="u">here</Text>

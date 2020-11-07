@@ -91,22 +91,66 @@ const About = () => {
             />
             <Divider borderColor={borderColor[colorMode]} my={8} w="100%" />
             <Text color={secondaryTextColor[colorMode]} fontSize="2xl" mb={4}>
+              I'm a software engineer, project manager, and multi-time SaaS
+              startup founder, passionate about connecting industries, from
+              financial technology to automotive manufacturing, to legaltech,
+              with consumer and operations data.
+              <br />
+              <br />
+              Following the acquisition of BankerBox in 2019, I've assumed a
+              principal engineering role with Boston-based SS&amp;C Intralinks,
+              steering post-merger integration and product research and
+              development. When I co-founded the fintech SaaS company, BankerBox
+              in 2017, I set out to co-create a cloud-based process management
+              platform that automates time-consuming tasks associated with
+              M&amp;A due diligence, while retaining a high-touch, personalized
+              approach. Today, BankerBox, renamed Intralinks for Deal Marketing,
+              serves global banking, deal making, and capital markets with new
+              users onboarded every day.
+              <br />
+              <br />
+              Along with driving software development for the fintech firm, I'm
+              scaling my automotive inventory analytics SaaS company, AutoLytx.
+              Founded in 2015, AutoLytx seeks to help automobile manufacturers
+              and dealers harness the power of data and ultimately build
+              profitable, fast-selling car inventories. For five years, I've
+              served as co-founder and CTO, working with clients nationally to
+              improve the user and customer experience, while providing
+              data-driven recommendations powering $600M in inventory orders
+              annually.
+              <br />
+              <br />
+              I hold a Bachelor of Science in Economics from Colorado School of
+              Mines. Outside of my tech endeavors, I spend my time traveling
+              with plans to visit every U.S. state (nine to go!). I also enjoy
+              cooking and exploring around New England neighborhood in hopes of
+              finding my next favorite cocktail bar, brewery, or Mexican
+              restaurant. I also enjoy hiking, keep up on the latest in high-end
+              menswear fashion, and walking my dog, George, a.k.a. "Tuna".
+              <br />
+              <br />
               As of April 2019, I've been a Managing Principal Engineer for a
               FinTech company in Boston, MA.
               <br />
-              <br />I was born and raised in beautiful Denver, CO. I grew up
-              camping, hiking, and enjoying the great outdoors. At a young age,
-              I started to build computers, learning to code, and fell in love
-              with all things tech. I have a maltese yorkie named George, who my
-              family all calls "Tuna" after Jim from The Office. I'm an avid
-              traveler, whiskey and cigar connoisseur, and I plan on retiring by
-              55. I'm a big proponet of the F.I.R.E. movement.
+              <br />
+              Going way back {"->"}
               <br />
               <br />
-              Okay, let's talk tech! I love to work with{" "}
+              I was born and raised in beautiful Denver, CO. I grew up camping,
+              hiking, and enjoying the great outdoors. At a young age, I started
+              to build computers, learning to code, and fell in love with all
+              things tech. I have a maltese yorkie named George, who my family
+              all calls "Tuna" after Jim from The Office. I'm an avid traveler,
+              whiskey and cigar connoisseur, and I plan on retiring by 55. I'm a
+              big proponet of the F.I.R.E. movement.
+              <br />
+              <br />
+              Back to the present, programming things I love {"->"}
+              <br />
+              <br />
               <Text as="b">ReactJS</Text>, <Text as="b">Next.JS</Text>,{" "}
               <Text as="b">Ruby on Rails</Text>,{" "}
-              <Text as="b">Flask & Python</Text>, and{" "}
+              <Text as="b">Flask &amp; Python</Text>, and{" "}
               <Text as="b">Node.JS</Text>.
               <br />
               <br />
@@ -116,12 +160,6 @@ const About = () => {
                   <Text as="u">Check it out here!</Text>
                 </Link>
               </NextLink>
-              <br />
-              <br />
-              I've started multiple boutique software companies over the years.
-              I have explicit experience working with Fortune 500 companies,
-              local and state governments, automotive dealerships, investment
-              banks, and social media &amp; digital agencies,
               <br />
               <br />I plan on continuing to ship until I get tech-sick.
             </Text>
