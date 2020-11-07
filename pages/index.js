@@ -73,7 +73,7 @@ const Index = () => {
             consumer and operations data. Today, Michael leads post-merger
             integration of his startup, BankerBox, with SS&amp;C Intralinks as
             Principal Software Engineer Project Lead, based in Boston, MA. You
-            can read more about my background:{" "}
+            can read more about my background{" "}
             <NextLink href="/about" passHref>
               <Link color={secondaryTextColor[colorMode]}>
                 <Text as="u">here</Text>
