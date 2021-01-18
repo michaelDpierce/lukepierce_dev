@@ -55,10 +55,10 @@ const FullTimeline = () => (
     <List>
       <TimelineStep title="Seed of My First Start-Up Idea 🌱">
         When I was 15 years old, I started working. By the age of 19, I fell
-        into being a manager of a local country club pool. The entire staff quit
-        to protest the management company that hired them. I stayed on, as the
-        sole employee. Learning by doing is what I do best. I hired staff, read
-        about chemical management and pool operations, and helped the club
+        into being a pool manager at the local country club. The entire staff
+        quit to protest the management company that hired us. I stayed on, as
+        the sole employee. Learning by doing is what I do best. I hired staff,
+        read about chemical management and pool operations, and helped the club
         finish off the season smoothly. Having took some C++ in college, I wrote
         a simple C++ program to calculate the pools Saturation Index (SI), and
         gave it to the maintenance staff.
@@ -70,7 +70,7 @@ const FullTimeline = () => (
     </Heading>
     <List>
       <TimelineStep title="Early Acceptance into College 🎓">
-        At the age of 16 I started my college career early. I will never forgot
+        At the age of 16 I started my college career early. I will never forget
         the feeling of being a young kid sitting in the front-row of my
         Mathematics class, surrounded by my more matured peers.
       </TimelineStep>
@@ -81,7 +81,7 @@ const FullTimeline = () => (
     </Heading>
     <List>
       <TimelineStep title="First International Trip 🇳🇿">
-        My best friend in highschool invited me to go to New Zealand with him
+        My best friend in high school invited me to go to New Zealand with him
         and his family. The plan was to do missions work and make a sizable
         donation to a school in Tonga, after our trip to NZ. This was my first
         of many travels, and the source of my wanderlust.
@@ -102,8 +102,8 @@ const FullTimeline = () => (
     </Heading>
     <List>
       <TimelineStep title="First Game Console 🎮">
-        My parents bought me the Super Nintendo Super Mario World bundle at
-        BestBuy. My inner-nerd was born.
+        My parents bought me the Super Nintendo Super Mario World bundle at Best
+        Buy. My inner-nerd was born.
       </TimelineStep>
     </List>
     <YearDivider />
@@ -162,8 +162,8 @@ const Timeline = () => {
       </Heading>
       <List>
         <TimelineStep title="Started My First Company 💻">
-          In 2013 I started DigiQuatics. The seed of an idea I had when I was
-          the pool manager had grown and I wanted to pursue a SaaS solution.
+          In 2013, I started DigiQuatics. The seed of an idea I had when I was
+          the pool manager had grown, and I wanted to pursue a SaaS solution.
           Besides some C++, UNIX, and HTML/CSS in college I had no real
           experience. I started off on Google, learning how to build an app. 5
           years later, DigiQuatics grew to 35,000 users, spread across 5

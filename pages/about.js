@@ -92,10 +92,10 @@ const About = () => {
             />
             <Divider borderColor={borderColor[colorMode]} my={8} w="100%" />
             <Text color={secondaryTextColor[colorMode]} fontSize="2xl" mb={4}>
-              I'm a software engineer, project manager, and multi-time SaaS
-              startup founder, passionate about connecting industries, from
-              financial technology to automotive manufacturing, to legaltech,
-              with consumer and operations data.
+              I'm a software engineer, project manager, multi-time SaaS startup
+              founder and investor, passionate about connecting industries, from
+              financial technology (FinTech) to automotive manufacturing, to
+              Legal Tech, with consumer and operations data.
               <br />
               <br />
               Following the acquisition of BankerBox in 2019, I've assumed a
@@ -122,8 +122,8 @@ const About = () => {
               <br />
               <br />
               I hold a Bachelor of Science in Economics from Colorado School of
-              Mines. Outside of my tech endeavors, I spend my time traveling
-              with plans to visit every U.S. state (nine to go!). I also enjoy
+              Mines. Outside my tech endeavors, I spend my time traveling with
+              plans to visit every U.S. state (nine to go!). I also enjoy
               cooking and exploring around New England neighborhood in hopes of
               finding my next favorite cocktail bar, brewery, or Mexican
               restaurant. I also enjoy hiking, keep up on the latest in high-end
@@ -140,10 +140,12 @@ const About = () => {
               I was born and raised in beautiful Denver, CO. I grew up camping,
               hiking, and enjoying the great outdoors. At a young age, I started
               to build computers, learning to code, and fell in love with all
-              things tech. I have a maltese yorkie named George, who my family
-              all calls "Tuna" after Jim from The Office. I'm an avid traveler,
-              whiskey and cigar connoisseur, and I plan on retiring by 55. I'm a
-              big proponet of the F.I.R.E. movement.
+              things tech. I have a Maltese Yorkie named George, who my family
+              all calls "Tuna" after Jim from The Office. Recently, my partner
+              and I got a Jack Russell Terrier named Appa after Avatar The Last
+              Airbender. I'm an avid traveler, whiskey and cigar connoisseur,
+              and I plan on retiring by 55. Furthermore, I'm a big proponent of
+              the F.I.R.E. movement.
               <br />
               <br />
               Back to the present, programming things I love {"->"}

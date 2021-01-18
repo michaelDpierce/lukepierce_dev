@@ -65,13 +65,13 @@ const Index = () => {
             <span ref={introRef} />
           </Text>
           <Text color={secondaryTextColor[colorMode]} fontSize="2xl">
-            I'm a software engineer, project manager, and multi-time SaaS
-            startup founder, passionate about connecting industries, like
-            financial technology, automotive manufacturing, and legaltech, with
-            consumer and operations data. Today, Michael leads post-merger
-            integration of his startup, BankerBox, with SS&amp;C Intralinks as
-            Principal Software Engineer Project Lead, based in Boston, MA. You
-            can read more about my background{" "}
+            I'm a software engineer, project manager, multi-time SaaS startup
+            founder and investor, passionate about connecting industries, like
+            financial technology (FinTech), automotive manufacturing, and Legal
+            Tech, with consumer and operations data. Today, I lead post-merger
+            integration of the startup I co-founded, BankerBox, with SS&amp;C
+            Intralinks as Principal Software Engineer Project Lead, based in
+            Boston, MA. You can read more about my background{" "}
             <NextLink href="/about" passHref>
               <Link color={secondaryTextColor[colorMode]}>
                 <Text as="u">here</Text>
@@ -109,13 +109,13 @@ const Index = () => {
           </Heading>
           <ProjectCard
             title="BankerBox"
-            description="Simple CRM + Deal Manager for Investment Bankers. Streamlined M&amp;A outreach to buyers. Acquired in 2019 by SS&amp;C."
+            description="Simple CRM + Deal Manager for Investment Bankers. Streamlined M&amp;A buyer and DCM outreach. Acquired in 2019 by SS&amp;C."
             href="https://dealmarketing.intralinks.com/"
             color="#7b45c7"
           />
           <ProjectCard
             title="AutoLytx"
-            description="Automotive inventory analytics. Simplified. Helping automobile manufacturers and dealers harness the power of data. Currently owned and operating."
+            description="Automotive Inventory Analytics. Simplified. Helping automobile manufacturers and dealers harness the power of data. Currently owned and operating."
             href="https://www.autolytx.com/"
             color="#16d0b1"
           />
