@@ -21,11 +21,9 @@ import {
 } from "@chakra-ui/core";
 import { FULL_NAME, INTRO_TYPING } from "../lib/constants";
 
-// import BlogPost from "@/components/BlogPost";
 import Container from "@/components/Container";
 import NextLink from "next/link";
 import ProjectCard from "@/components/ProjectCard";
-import Subscribe from "@/components/Subscribe";
 import Timeline from "@/components/Timeline";
 import useTyped from "@/components/useTyped";
 
@@ -100,20 +98,6 @@ const Index = () => {
           </>
         </>
         <Divider borderColor={borderColor[colorMode]} my={8} w="100%" />;
-        {/* <Flex
-          flexDirection="column"
-          justifyContent="flex-start"
-          alignItems="flex-start"
-          maxWidth="700px"
-          mt={8}
-        >
-          <Heading letterSpacing="tight" mb={4} size="xl" fontWeight={700}>
-            Most Popular
-          </Heading>
-          <BlogPost {...styleGuides} />
-          <BlogPost {...stripeDesign} />
-          <BlogPost {...monorepo} />
-        </Flex> */}
         <Flex
           flexDirection="column"
           justifyContent="flex-start"
@@ -143,7 +127,6 @@ const Index = () => {
           />
         </Flex>
         <Timeline />
-        <Subscribe />
       </Stack>
 
       <Modal isOpen={isOpen} onClose={onClose}>

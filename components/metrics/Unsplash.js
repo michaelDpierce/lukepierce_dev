@@ -2,7 +2,7 @@ import MetricCard from "./Card";
 import { SimpleGrid } from "@chakra-ui/core";
 import { UNSPLASH_USER } from "@/lib/constants";
 import fetcher from "@/lib/fetcher";
-import format from "comma-number";
+import format from "@/lib/formatNumber";
 import useSWR from "swr";
 
 const Unsplash = () => {

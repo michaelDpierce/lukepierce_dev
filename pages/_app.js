@@ -12,19 +12,19 @@ import {
   ThemeProvider,
   useColorMode,
 } from "@chakra-ui/core";
+
 import { Global, css } from "@emotion/core";
 import React, { useEffect } from "react";
 import { prismDarkTheme, prismLightTheme } from "@/styles/prism";
 
 import { DefaultSeo } from "next-seo";
-import MDXComponents from "@/components/MDXComponents";
-import { MDXProvider } from "@mdx-js/react";
 import Router from "next/router";
 import SEO from "../next-seo.config";
 import theme from "@/styles/theme";
 
 const GlobalStyle = ({ children }) => {
   const { colorMode } = useColorMode();
+
   return (
     <>
       <CSSReset />
@@ -70,14 +70,12 @@ const App = ({ Component, pageProps }) => {
 
   return (
     <ThemeProvider theme={theme}>
-      <MDXProvider components={MDXComponents}>
-        <ColorModeProvider value="light">
-          <GlobalStyle>
-            <DefaultSeo {...SEO} />
-            <Component {...pageProps} />
-          </GlobalStyle>
-        </ColorModeProvider>
-      </MDXProvider>
+      <ColorModeProvider value="light">
+        <GlobalStyle>
+          <DefaultSeo {...SEO} />
+          <Component {...pageProps} />
+        </GlobalStyle>
+      </ColorModeProvider>
     </ThemeProvider>
   );
 };

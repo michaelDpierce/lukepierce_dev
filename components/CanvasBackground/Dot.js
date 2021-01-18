@@ -3,7 +3,6 @@
 // =============================================================================
 
 import { TweenMax } from "gsap";
-
 export class Dot {
   // Create a new dot:
   // * x, y: positon of each dot

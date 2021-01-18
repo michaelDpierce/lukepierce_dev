@@ -3,7 +3,6 @@
 // =============================================================================
 
 import { Dot } from "./Dot";
-
 export default class CanvasBackground extends React.Component {
   constructor(props) {
     super(props);

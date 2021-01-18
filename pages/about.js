@@ -14,6 +14,7 @@ import {
   Text,
   useColorMode,
 } from "@chakra-ui/core";
+
 import { FULL_NAME, HOST_URL } from "../lib/constants";
 import React, { useEffect, useState } from "react";
 

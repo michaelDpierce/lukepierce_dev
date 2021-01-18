@@ -1,6 +1,8 @@
-// =============================================================================
-// Copyright © 2020 Michael Pierce. All rights reserved.
-// =============================================================================
+/*
+ * =============================================================================
+ * Copyright © 2020 Michael Pierce. All rights reserved.
+ * =============================================================================
+ */
 
 import {
   Box,
@@ -18,16 +20,17 @@ import {
   useColorMode,
   useDisclosure,
 } from "@chakra-ui/core";
+
+import InteractiveDots from "./CanvasBackground/CanvasBackground";
+import useMobile from "./useMobile";
+
 import {
   FULL_NAME,
   GITHUB_URL,
   LINKEDIN_URL,
   TWITTER_URL,
 } from "@/lib/constants";
-
 import ContactEmail from "@/components/ContactEmail";
-import InteractiveDots from "./CanvasBackground/CanvasBackground";
-import useMobile from "./useMobile";
 
 const Footer = () => {
   const isTouchDevice = useMobile();

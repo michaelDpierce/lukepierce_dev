@@ -12,8 +12,6 @@ import {
   useColorMode,
 } from "@chakra-ui/core";
 
-import Analytics from "@/components/metrics/Analytics";
-import Buttondown from "@/components/metrics/Buttondown";
 import Container from "@/components/Container";
 import { NextSeo } from "next-seo";
 import Unsplash from "@/components/metrics/Unsplash";
@@ -61,8 +59,8 @@ const Dashboard = () => {
             </Heading>
             <Text color={secondaryTextColor[colorMode]}>
               This is my personal dashboard. I use this dashboard to track
-              various metrics across platforms like Unsplash, my blog views, and
-              more.
+              various metrics across platforms like Unsplash and my blog (coming
+              soon)!
             </Text>
           </Flex>
           <Flex
@@ -73,10 +71,6 @@ const Dashboard = () => {
             mt={8}
           >
             <Unsplash />
-            <SimpleGrid columns={[1, 1, 2]} spacing={4} mb={4}>
-              <Analytics />
-              <Buttondown />
-            </SimpleGrid>
           </Flex>
         </Stack>
       </Container>
