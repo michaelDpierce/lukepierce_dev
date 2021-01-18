@@ -4,7 +4,9 @@
 
 import "@/styles/index.css";
 
-import * as Fathom from "fathom-client";
+import {trackPageview, load} from "fathom-client";
+
+import Head from 'next/head'
 
 import {
   CSSReset,
@@ -56,13 +58,13 @@ const GlobalStyle = ({ children }) => {
 };
 
 Router.events.on("routeChangeComplete", () => {
-  Fathom.trackPageview();
+  trackPageview();
 });
 
 const App = ({ Component, pageProps }) => {
   useEffect(() => {
     if (process.env.NODE_ENV === "production") {
-      Fathom.load(process.env.NEXT_PUBLIC_FATHOM_SITE_ID, {
+      load(process.env.NEXT_PUBLIC_FATHOM_SITE_ID, {
         includedDomains: ["michaelpierce.dev"],
       });
     }
@@ -72,6 +74,9 @@ const App = ({ Component, pageProps }) => {
     <ThemeProvider theme={theme}>
       <ColorModeProvider value="light">
         <GlobalStyle>
+          <Head>
+            <meta content="width=device-width, initial-scale=1" name="viewport" />
+          </Head>
           <DefaultSeo {...SEO} />
           <Component {...pageProps} />
         </GlobalStyle>

@@ -2,6 +2,8 @@
 // Copyright © 2020 Michael Pierce. All rights reserved.
 // =============================================================================
 
+import React from "react";
+
 import { Dot } from "./Dot";
 export default class CanvasBackground extends React.Component {
   constructor(props) {
