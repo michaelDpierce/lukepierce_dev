@@ -14,7 +14,6 @@ import {
   Text,
   useColorMode,
 } from "@chakra-ui/core";
-
 import { FULL_NAME, HOST_URL } from "../lib/constants";
 import React, { useEffect, useState } from "react";
 
@@ -26,7 +25,7 @@ import dynamic from "next/dynamic";
 import useMobile from "@/components/useMobile";
 
 const url = `${HOST_URL}/about`;
-const title = `About Me – ${FULL_NAME}`;
+const title = `About – ${FULL_NAME}`;
 
 const Map = dynamic(() => import("../components/Map"), {
   ssr: false,
@@ -82,7 +81,7 @@ const About = () => {
             maxWidth="700px"
           >
             <Heading letterSpacing="tight" mb={4} as="h1" size="2xl">
-              About Me
+              About
             </Heading>
             <Image
               className="pointer-hand"
@@ -92,46 +91,48 @@ const About = () => {
             />
             <Divider borderColor={borderColor[colorMode]} my={8} w="100%" />
             <Text color={secondaryTextColor[colorMode]} fontSize="2xl" mb={4}>
-              I'm a software engineer, project manager, multi-time SaaS startup
-              founder and investor, passionate about connecting industries, from
-              financial technology (FinTech) to automotive manufacturing, to
+              I'm a project manager, software engineer, multi-time SaaS startup
+              founder and investor (Co-Founded Micro-PE firm), passionate about connecting industries, from
+              Financial Technology (FinTech) to Automotive Manufacturing, to
               Legal Tech, with consumer and operations data.
               <br />
               <br />
               Following the acquisition of BankerBox in 2019, I've assumed a
-              principal engineering role with Boston-based SS&amp;C Intralinks,
+              managing principal engineering role with Boston-based SS&amp;C Intralinks,
               steering post-merger integration and product research and
-              development. When I co-founded the fintech SaaS company, BankerBox
+              development. When I co-founded the FinTech SaaS company, BankerBox
               in 2017, I set out to co-create a cloud-based process management
               platform that automates time-consuming tasks associated with
               M&amp;A due diligence, while retaining a high-touch, personalized
               approach. Today, BankerBox, renamed Intralinks for Deal Marketing,
               serves global banking, deal making, and capital markets with new
-              users onboarded every day.
+              users onboarded every day. Since, I have moved into Product Management,
+              spearheading this product for the company.
               <br />
               <br />
-              Along with driving software development for the fintech firm, I'm
+              Along with driving software development for the FinTech firm, I'm
               scaling my automotive inventory analytics SaaS company, AutoLytx.
               Founded in 2015, AutoLytx seeks to help automobile manufacturers
               and dealers harness the power of data and ultimately build
               profitable, fast-selling car inventories. For five years, I've
               served as co-founder and CTO, working with clients nationally to
               improve the user and customer experience, while providing
-              data-driven recommendations powering $600M in inventory orders
+              data-driven recommendations powering $600MM in inventory orders
               annually.
               <br />
               <br />
               I hold a Bachelor of Science in Economics from Colorado School of
               Mines. Outside my tech endeavors, I spend my time traveling with
-              plans to visit every U.S. state (nine to go!). I also enjoy
+              plans to visit every U.S. state (four to go!). I also enjoy
               cooking and exploring around New England neighborhood in hopes of
               finding my next favorite cocktail bar, brewery, or Mexican
-              restaurant. I also enjoy hiking, keep up on the latest in high-end
-              menswear fashion, and walking my dog, George, a.k.a. "Tuna".
+              restaurant & Steakhouse. I also enjoy hiking, keep up on the 
+              latest in high-end menswear fashion, and walking my dog, Appa, 
+              a.k.a. "Demon".
               <br />
               <br />
-              As of April 2019, I've been a Managing Principal Engineer for a
-              FinTech company in Boston, MA.
+              As of June 2021, I've headed up the Deal Marketing Division as a
+              Principal Product Manager for a FinTech company in Boston, MA.
               <br />
               <br />
               Going way back {"->"}
