@@ -35,7 +35,9 @@ const trackGoal = (title) => {
     BankerBox: "XDQEADTY",
   };
 
-  Fathom.trackGoal(goalCodes[title], 0);
+  if (process.env.NODE_ENV === "production") {
+    Fathom.trackGoal(goalCodes[title], 0);
+  }
 };
 
 const ProjectCard = ({ title, description, href, color }) => {

@@ -2,8 +2,6 @@
 // Copyright © 2020 Michael Pierce. All rights reserved.
 // =============================================================================
 
-import React from "react";
-
 import {
   Button,
   Divider,
@@ -26,6 +24,7 @@ import { FULL_NAME, INTRO_TYPING } from "../lib/constants";
 import Container from "@/components/Container";
 import NextLink from "next/link";
 import ProjectCard from "@/components/ProjectCard";
+import React from "react";
 import Timeline from "@/components/Timeline";
 import useTyped from "@/components/useTyped";
 
@@ -67,12 +66,12 @@ const Index = () => {
             <span ref={introRef} />
           </Text>
           <Text color={secondaryTextColor[colorMode]} fontSize="2xl">
-            I'm a software engineer, project manager, multi-time SaaS startup
-            founder and investor, passionate about connecting industries, like
-            financial technology (FinTech), automotive manufacturing, and Legal
+            I'm a project manager, software engineer, multi-time SaaS startup
+            founder and investor (Co-Founded a Micro-PE firm), passionate about connecting industries, like
+            Financial Technology (FinTech), Automotive Manufacturing, and Legal
             Tech, with consumer and operations data. Today, I lead post-merger
             integration of the startup I co-founded, BankerBox, with SS&amp;C
-            Intralinks as Principal Software Engineer Project Lead, based in
+            Intralinks as Principal Product Manager, based in
             Boston, MA. You can read more about my background{" "}
             <NextLink href="/about" passHref>
               <Link color={secondaryTextColor[colorMode]}>
@@ -109,6 +108,12 @@ const Index = () => {
           <Heading letterSpacing="tight" mb={4} size="xl" fontWeight={700}>
             Recent Projects
           </Heading>
+          <ProjectCard
+            title="GreetBox"
+            description="Group-Based Greeting Cards Online. Bring joy to someone's life with an online eCard filled with messages, photos, videos, and GIFs!"
+            href="https://greetbox.co/"
+            color="#463cc3"
+          />
           <ProjectCard
             title="BankerBox"
             description="Simple CRM + Deal Manager for Investment Bankers. Streamlined M&amp;A buyer and DCM outreach. Acquired in 2019 by SS&amp;C."
