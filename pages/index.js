@@ -1,5 +1,5 @@
 // =============================================================================
-// Copyright © 2020 Michael Pierce. All rights reserved.
+// Copyright © 2022 Michael Pierce. All rights reserved.
 // =============================================================================
 
 import {
@@ -18,28 +18,28 @@ import {
   Text,
   useColorMode,
   useDisclosure,
-} from "@chakra-ui/core";
-import { FULL_NAME, INTRO_TYPING } from "../lib/constants";
+} from '@chakra-ui/core';
+import { FULL_NAME, INTRO_TYPING } from '@/lib/constants';
 
-import Container from "@/components/Container";
-import NextLink from "next/link";
-import ProjectCard from "@/components/ProjectCard";
-import React from "react";
-import Timeline from "@/components/Timeline";
-import useTyped from "@/components/useTyped";
+import Container from '@/components/Container';
+import NextLink from 'next/link';
+import ProjectCard from '@/components/ProjectCard';
+import React from 'react';
+import Timeline from '@/components/Timeline';
+import useTyped from '@/components/useTyped';
 
 const Index = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode } = useColorMode();
 
   const borderColor = {
-    light: "gray.400",
-    dark: "gray.600",
+    light: 'gray.400',
+    dark: 'gray.600',
   };
 
   const secondaryTextColor = {
-    light: "gray.700",
-    dark: "gray.400",
+    light: 'gray.700',
+    dark: 'gray.400',
   };
 
   const introRef = React.useRef(null);
@@ -60,19 +60,20 @@ const Index = () => {
         m="0 auto 6rem auto"
         maxWidth="700px"
       >
-        <Text fontSize="6xl">Hi, I’m {FULL_NAME}</Text>
+        <Text fontSize="5xl">Hi, I’m {FULL_NAME}</Text>
         <>
           <Text fontSize="3xl" mb={4}>
             <span ref={introRef} />
           </Text>
           <Text color={secondaryTextColor[colorMode]} fontSize="2xl">
-            I'm a project manager, software engineer, multi-time SaaS startup
-            founder and investor (Co-Founded a Micro-PE firm), passionate about connecting industries, like
-            Financial Technology (FinTech), Automotive Manufacturing, and Legal
-            Tech, with consumer and operations data. Today, I lead post-merger
-            integration of the startup I co-founded, BankerBox, with SS&amp;C
-            Intralinks as Principal Product Manager, based in
-            Boston, MA. You can read more about my background{" "}
+            I'm a product manager, project manager, software engineer, multi-time SaaS startup
+            founder and investor (co-founded a Micro-PE firm), passionate about connecting
+            industries, from financial technology (FinTech) to automotive inventory analytic
+            (AutoTech), to LegalTech, with consumer and operations data. In the past, I also had
+            built and sold a company in the GovTech space serving parks and recreation departments
+            across the US. Today, I lead post-merger integration of the startup I co-founded,
+            BankerBox, with SS&amp;C Intralinks as Principal Product Manager, based in Boston, MA.
+            You can read more about my background{' '}
             <NextLink href="/about" passHref>
               <Link color={secondaryTextColor[colorMode]}>
                 <Text as="u">here</Text>
@@ -141,9 +142,7 @@ const Index = () => {
         <ModalContent>
           <ModalHeader>Glad you want to learn more!</ModalHeader>
           <ModalBody>
-            <Text fontSize="1xl">
-              You can find my resume in the following formats:
-            </Text>
+            <Text fontSize="1xl">You can find my resume in the following formats:</Text>
             <br />
             <Button mx={1} aria-label="Download PDF Resume">
               <a href="michael-pierce-resume.pdf" download>

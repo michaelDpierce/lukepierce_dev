@@ -1,5 +1,5 @@
 // =============================================================================
-// Copyright © 2020 Michael Pierce. All rights reserved.
+// Copyright © 2022 Michael Pierce. All rights reserved.
 // =============================================================================
 
 import { Button, Flex, Input, Link, Text, useClipboard } from "@chakra-ui/core";

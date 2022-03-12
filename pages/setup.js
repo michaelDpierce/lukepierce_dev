@@ -1,5 +1,5 @@
 // =============================================================================
-// Copyright © 2020 Michael Pierce. All rights reserved.
+// Copyright © 2022 Michael Pierce. All rights reserved.
 // =============================================================================
 
 import {
@@ -14,7 +14,6 @@ import {
   Text,
   useColorMode,
 } from "@chakra-ui/core";
-
 import { FULL_NAME, HOST_URL } from "@/lib/constants";
 
 import Container from "@/components/Container";

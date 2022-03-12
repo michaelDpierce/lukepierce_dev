@@ -1,8 +1,3 @@
-// =============================================================================
-// Copyright © 2020 Michael Pierce. All rights reserved.
-// =============================================================================
-import { useEffect, useState } from "react";
-
 import {
   Box,
   Button,
@@ -23,6 +18,10 @@ import {
   useColorMode,
   useDisclosure,
 } from "@chakra-ui/core";
+// =============================================================================
+// Copyright © 2022 Michael Pierce. All rights reserved.
+// =============================================================================
+import { useEffect, useState } from "react";
 
 import ContactEmail from "@/components/ContactEmail";
 import Footer from "./Footer";

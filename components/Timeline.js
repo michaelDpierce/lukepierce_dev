@@ -1,5 +1,5 @@
 // =============================================================================
-// Copyright © 2020 Michael Pierce. All rights reserved.
+// Copyright © 2022 Michael Pierce. All rights reserved.
 // =============================================================================
 
 import {
@@ -13,14 +13,14 @@ import {
   Stack,
   Text,
   useColorMode,
-} from "@chakra-ui/core";
-import React, { useState } from "react";
+} from '@chakra-ui/core';
+import React, { useState } from 'react';
 
 const YearDivider = () => {
   const { colorMode } = useColorMode();
   const borderColor = {
-    light: "gray.200",
-    dark: "gray.600",
+    light: 'gray.200',
+    dark: 'gray.600',
   };
   return <Divider borderColor={borderColor[colorMode]} my={8} w="100%" />;
 };
@@ -28,8 +28,8 @@ const YearDivider = () => {
 const TimelineStep = ({ title, children }) => {
   const { colorMode } = useColorMode();
   const color = {
-    light: "gray.700",
-    dark: "gray.400",
+    light: 'gray.700',
+    dark: 'gray.400',
   };
 
   return (
@@ -54,14 +54,12 @@ const FullTimeline = () => (
     </Heading>
     <List>
       <TimelineStep title="Seed of My First Start-Up Idea 🌱">
-        When I was 15 years old, I started working. By the age of 19, I fell
-        into being a pool manager at the local country club. The entire staff
-        quit to protest the management company that hired us. I stayed on, as
-        the sole employee. Learning by doing is what I do best. I hired staff,
-        read about chemical management and pool operations, and helped the club
-        finish off the season smoothly. Having took some C++ in college, I wrote
-        a simple C++ program to calculate the pools Saturation Index (SI), and
-        gave it to the maintenance staff.
+        When I was 15 years old, I started working. By the age of 19, I fell into being a pool
+        manager at the local country club. The entire staff quit to protest the management company
+        that hired us. I stayed on, as the sole employee. Learning by doing is what I do best. I
+        hired staff, read about chemical management and pool operations, and helped the club finish
+        off the season smoothly. Having took some C++ in college, I wrote a simple C++ program to
+        calculate the pools Saturation Index (SI), and gave it to the maintenance staff.
       </TimelineStep>
     </List>
     <YearDivider />
@@ -70,9 +68,9 @@ const FullTimeline = () => (
     </Heading>
     <List>
       <TimelineStep title="Early Acceptance into College 🎓">
-        At the age of 16 I started my college career early. I will never forget
-        the feeling of being a young kid sitting in the front-row of my
-        Mathematics class, surrounded by my more matured peers.
+        At the age of 16 I started my college career early. I will never forget the feeling of being
+        a young kid sitting in the front-row of my Mathematics class, surrounded by my more matured
+        peers.
       </TimelineStep>
     </List>
     <YearDivider />
@@ -81,10 +79,9 @@ const FullTimeline = () => (
     </Heading>
     <List>
       <TimelineStep title="First International Trip 🇳🇿">
-        My best friend in high school invited me to go to New Zealand with him
-        and his family. The plan was to do missions work and make a sizable
-        donation to a school in Tonga, after our trip to NZ. This was my first
-        of many travels, and the source of my wanderlust.
+        My best friend in high school invited me to go to New Zealand with him and his family. The
+        plan was to do missions work and make a sizable donation to a school in Tonga, after our
+        trip to NZ. This was my first of many travels, and the source of my wanderlust.
       </TimelineStep>
     </List>
     <YearDivider />
@@ -102,8 +99,8 @@ const FullTimeline = () => (
     </Heading>
     <List>
       <TimelineStep title="First Game Console 🎮">
-        My parents bought me the Super Nintendo Super Mario World bundle at Best
-        Buy. My inner-nerd was born.
+        My parents bought me the Super Nintendo Super Mario World bundle at Best Buy. My inner-nerd
+        was born.
       </TimelineStep>
     </List>
     <YearDivider />
@@ -130,20 +127,26 @@ const Timeline = () => {
       <Heading letterSpacing="tight" mb={4} size="xl" fontWeight="bold">
         Timeline
       </Heading>
-      <Heading
-        as="h3"
-        size="lg"
-        fontWeight="bold"
-        mb={4}
-        letterSpacing="tighter"
-      >
+      <Heading as="h3" size="lg" fontWeight="bold" mb={4} letterSpacing="tighter">
+        2021
+      </Heading>
+      <List>
+        <TimelineStep title="Got Married ">
+          Got married to my wonderful wife Chang on May 22nd, 2021. We had a lovely ceremony outside
+          a 100 year-old New England style building in Newton, MA. Historic bridges and paths,
+          wonderful trees, flowers, and shrubs, and ducks swimming in the nearby pond. Our closest
+          friends and family came from all of the country to support us.
+        </TimelineStep>
+      </List>
+      <YearDivider />
+      <Heading as="h3" size="lg" fontWeight="bold" mb={4} letterSpacing="tighter">
         2019
       </Heading>
       <List>
         <TimelineStep title="Busiest Year of My Life ⏳">
-          Wow... 2019 was a whirlwind. From selling DigiQuatics, to getting
-          BankerBox acquired, to moving across the country, this year was SUPER
-          crazy from start to finish. You can read all about it in this{" "}
+          Wow... 2019 was a whirlwind. From selling DigiQuatics, to getting BankerBox acquired, to
+          moving across the country, this year was SUPER crazy from start to finish. You can read
+          all about it in this{' '}
           <Link href="https://mpierce.blog/posts/my-eventful-2019" isExternal>
             <Text as="u">blog post</Text>
           </Link>
@@ -151,55 +154,35 @@ const Timeline = () => {
         </TimelineStep>
       </List>
       <YearDivider />
-      <Heading
-        as="h3"
-        size="lg"
-        fontWeight="bold"
-        mb={4}
-        letterSpacing="tighter"
-      >
+      <Heading as="h3" size="lg" fontWeight="bold" mb={4} letterSpacing="tighter">
         2013
       </Heading>
       <List>
         <TimelineStep title="Started My First Company 💻">
-          In 2013, I started DigiQuatics. The seed of an idea I had when I was
-          the pool manager had grown, and I wanted to pursue a SaaS solution.
-          Besides some C++, UNIX, and HTML/CSS in college I had no real
-          experience. I started off on Google, learning how to build an app. 5
-          years later, DigiQuatics grew to 35,000 users, spread across 5
-          countries. My life changed forever from this moment.
+          In 2013, I started DigiQuatics. The seed of an idea I had when I was the pool manager had
+          grown, and I wanted to pursue a SaaS solution. Besides some C++, UNIX, and HTML/CSS in
+          college I had no real experience. I started off on Google, learning how to build an app. 5
+          years later, DigiQuatics grew to 35,000 users, spread across 5 countries. My life changed
+          forever from this moment.
         </TimelineStep>
       </List>
       <YearDivider />
-      <Heading
-        as="h3"
-        size="lg"
-        fontWeight="bold"
-        mb={4}
-        letterSpacing="tighter"
-      >
+      <Heading as="h3" size="lg" fontWeight="bold" mb={4} letterSpacing="tighter">
         2011
       </Heading>
       <List>
         <TimelineStep title="Professor of Mathematics 👨‍🏫">
-          Math has always been one of my passions. I spent years as a tutor and
-          decided to become a professor at a local community college.
+          Math has always been one of my passions. I spent years as a tutor and decided to become a
+          professor at a local community college.
         </TimelineStep>
       </List>
       <YearDivider />
-      <Heading
-        as="h3"
-        size="lg"
-        fontWeight="bold"
-        mb={4}
-        letterSpacing="tighter"
-      >
+      <Heading as="h3" size="lg" fontWeight="bold" mb={4} letterSpacing="tighter">
         2010
       </Heading>
       <List>
         <TimelineStep title="Graduated from Colorado School of Mines 🏫">
-          I graduated from Colorado School of Mines with a Bachelors in Science
-          in Economics.
+          I graduated from Colorado School of Mines with a Bachelors in Science in Economics.
         </TimelineStep>
       </List>
       {isShowingFullTimeline ? (

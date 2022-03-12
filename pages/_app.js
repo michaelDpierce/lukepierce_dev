@@ -1,12 +1,8 @@
 // =============================================================================
-// Copyright © 2020 Michael Pierce. All rights reserved.
+// Copyright © 2022 Michael Pierce. All rights reserved.
 // =============================================================================
 
 import "@/styles/index.css";
-
-import {trackPageview, load} from "fathom-client";
-
-import Head from 'next/head'
 
 import {
   CSSReset,
@@ -14,12 +10,13 @@ import {
   ThemeProvider,
   useColorMode,
 } from "@chakra-ui/core";
-
 import { Global, css } from "@emotion/core";
 import React, { useEffect } from "react";
+import {load, trackPageview} from "fathom-client";
 import { prismDarkTheme, prismLightTheme } from "@/styles/prism";
 
 import { DefaultSeo } from "next-seo";
+import Head from 'next/head'
 import Router from "next/router";
 import SEO from "../next-seo.config";
 import theme from "@/styles/theme";
