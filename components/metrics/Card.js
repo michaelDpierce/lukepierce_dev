@@ -1,3 +1,7 @@
+// =============================================================================
+// Copyright © 2022 Michael Pierce. All rights reserved.
+// =============================================================================
+
 import { Box, Flex, Icon, Link, Text, useColorMode } from "@chakra-ui/core";
 
 const MetricCard = ({ header, link, metric }) => {

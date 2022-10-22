@@ -1,4 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+// =============================================================================
+// Copyright © 2022 Michael Pierce. All rights reserved.
+// =============================================================================
+
+import { useEffect, useRef, useState } from 'react';
 
 export default function useHover() {
   const [value, setValue] = useState(false);
@@ -14,19 +18,19 @@ export default function useHover() {
       const node = ref.current;
 
       if (node) {
-        node.addEventListener("mouseover", handleMouseOver);
+        node.addEventListener('mouseover', handleMouseOver);
 
-        node.addEventListener("mouseout", handleMouseOut);
+        node.addEventListener('mouseout', handleMouseOut);
 
         return () => {
-          node.removeEventListener("mouseover", handleMouseOver);
+          node.removeEventListener('mouseover', handleMouseOver);
 
-          node.removeEventListener("mouseout", handleMouseOut);
+          node.removeEventListener('mouseout', handleMouseOut);
         };
       }
     },
 
-    [ref.current] // Recall only if ref changes
+    [ref.current], // Recall only if ref changes
   );
 
   return [ref, value];

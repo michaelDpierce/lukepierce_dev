@@ -1,3 +1,7 @@
+// =============================================================================
+// Copyright © 2022 Michael Pierce. All rights reserved.
+// =============================================================================
+
 import {
   Box,
   Button,
@@ -17,16 +21,13 @@ import {
   ModalOverlay,
   useColorMode,
   useDisclosure,
-} from "@chakra-ui/core";
-// =============================================================================
-// Copyright © 2022 Michael Pierce. All rights reserved.
-// =============================================================================
-import { useEffect, useState } from "react";
+} from '@chakra-ui/core';
+import { useEffect, useState } from 'react';
 
-import ContactEmail from "@/components/ContactEmail";
-import Footer from "./Footer";
-import NextLink from "next/link";
-import styled from "@emotion/styled";
+import ContactEmail from '@/components/ContactEmail';
+import Footer from './Footer';
+import NextLink from 'next/link';
+import styled from '@emotion/styled';
 
 const StickyNav = styled(Flex)`
   position: sticky;
@@ -49,9 +50,9 @@ function useWindowSize() {
       });
     }
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
     handleResize();
-    return () => window.removeEventListener("resize", handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
   return windowSize;
 }
@@ -63,25 +64,25 @@ const Container = ({ children }) => {
   const size = useWindowSize();
 
   const bgColor = {
-    light: "white",
-    dark: "gray.900",
+    light: 'white',
+    dark: 'gray.900',
   };
 
   const primarytextColor = {
-    light: "black",
-    dark: "white",
+    light: 'black',
+    dark: 'white',
   };
 
   const navBgColor = {
-    light: "rgba(255, 255, 255, 0.8)",
-    dark: "rgba(23, 25, 35, 0.8)",
+    light: 'rgba(255, 255, 255, 0.8)',
+    dark: 'rgba(23, 25, 35, 0.8)',
   };
 
   function storeColor() {
-    if (colorMode === "dark") {
-      localStorage.setItem("theme", "light");
+    if (colorMode === 'dark') {
+      localStorage.setItem('theme', 'light');
     } else {
-      localStorage.setItem("theme", "dark");
+      localStorage.setItem('theme', 'dark');
     }
   }
 
@@ -102,7 +103,7 @@ const Container = ({ children }) => {
       >
         <Box>
           <NextLink href="/" passHref>
-            {colorMode === "dark" ? (
+            {colorMode === 'dark' ? (
               <a>
                 <Image
                   className="pointer-hand"
@@ -126,22 +127,12 @@ const Container = ({ children }) => {
         {size.width > 700 ? (
           <Box>
             <NextLink href="/dashboard" passHref>
-              <Button
-                as="a"
-                variant="ghost"
-                p={[1, 4]}
-                aria-label="Dashboard Nav Link"
-              >
+              <Button as="a" variant="ghost" p={[1, 4]} aria-label="Dashboard Nav Link">
                 Dashboard
               </Button>
             </NextLink>
             <NextLink href="/about" passHref>
-              <Button
-                as="a"
-                variant="ghost"
-                p={[1, 4]}
-                aria-label="About Nav Link"
-              >
+              <Button as="a" variant="ghost" p={[1, 4]} aria-label="About Nav Link">
                 About
               </Button>
             </NextLink>
@@ -153,7 +144,7 @@ const Container = ({ children }) => {
             <IconButton
               mx={2}
               aria-label="Toggle dark mode"
-              icon={colorMode === "dark" ? "sun" : "moon"}
+              icon={colorMode === 'dark' ? 'sun' : 'moon'}
               onClick={() => {
                 toggleColorMode();
                 storeColor();
@@ -191,7 +182,7 @@ const Container = ({ children }) => {
             <IconButton
               mx={2}
               aria-label="Toggle dark mode"
-              icon={colorMode === "dark" ? "sun" : "moon"}
+              icon={colorMode === 'dark' ? 'sun' : 'moon'}
               onClick={() => {
                 toggleColorMode();
                 storeColor();
@@ -218,12 +209,7 @@ const Container = ({ children }) => {
               <ContactEmail />
             </ModalBody>
             <ModalFooter>
-              <Button
-                className="mx-2"
-                mr={3}
-                onClick={onClose}
-                aria-label="Close Contact Me Modal"
-              >
+              <Button className="mx-2" mr={3} onClick={onClose} aria-label="Close Contact Me Modal">
                 Close
               </Button>
             </ModalFooter>

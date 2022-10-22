@@ -1,12 +1,16 @@
-import MetricCard from "./Card";
-import { SimpleGrid } from "@chakra-ui/core";
-import { UNSPLASH_USER } from "@/lib/constants";
-import fetcher from "@/lib/fetcher";
-import format from "@/lib/formatNumber";
-import useSWR from "swr";
+// =============================================================================
+// Copyright © 2022 Michael Pierce. All rights reserved.
+// =============================================================================
+
+import MetricCard from './Card';
+import { SimpleGrid } from '@chakra-ui/core';
+import { UNSPLASH_USER } from '@/lib/constants';
+import fetcher from '@/lib/fetcher';
+import format from '@/lib/formatNumber';
+import useSWR from 'swr';
 
 const Unsplash = () => {
-  const { data } = useSWR("/api/unsplash", fetcher);
+  const { data } = useSWR('/api/unsplash', fetcher);
 
   const downloads = format(data?.downloads);
   const views = format(data?.views);

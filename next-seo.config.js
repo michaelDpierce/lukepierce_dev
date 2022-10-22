@@ -1,9 +1,8 @@
-import {
-  HOST_URL,
-  META_SITE_DESCRIPTION,
-  META_SITE_TITLE,
-  TWITTER_HANDLE,
-} from "./lib/constants";
+// =============================================================================
+// Copyright © 2022 Michael Pierce. All rights reserved.
+// =============================================================================
+
+import { HOST_URL, META_SITE_DESCRIPTION, META_SITE_TITLE, TWITTER_HANDLE } from './lib/constants';
 
 const title = META_SITE_TITLE;
 const description = META_SITE_DESCRIPTION;
@@ -15,8 +14,8 @@ const SEO = {
   description,
   canonical: hostURL,
   openGraph: {
-    type: "website",
-    locale: "en_IE",
+    type: 'website',
+    locale: 'en_IE',
     url: hostURL,
     title,
     description,
@@ -32,7 +31,7 @@ const SEO = {
   twitter: {
     handle: twitterHandle,
     site: twitterHandle,
-    cardType: "summary_large_image",
+    cardType: 'summary_large_image',
   },
 };
 
